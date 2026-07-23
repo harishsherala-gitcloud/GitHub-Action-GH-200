@@ -1,7 +1,11 @@
 name: 02 - Workflow Events
 
 on: 
-  push
+  push:
+  pull_request:
+  schedule:
+    - cron: '*/5 * * * *' # every 5 minutes
+  workflow_dispatch: # allows you to manually trigger the workflow from the Actions tab in your repository
 
 jobs:
   echo:
