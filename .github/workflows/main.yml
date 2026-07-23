@@ -12,5 +12,9 @@ jobs:
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
-      - name: Say goodbye
-        run: echo "Goodbye, world!"
+      - name: Say goodbye # checking for testing github action
+        run:
+          echo "Goodbye, world!"
+          exit 0
+      - name: Say goodbye again
+        run: echo "Goodbye again, world!"
