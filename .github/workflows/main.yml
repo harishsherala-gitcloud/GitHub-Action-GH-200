@@ -1,6 +1,6 @@
 name: 01 - Building Blocks
 
-on: push
+on: push # whenever to commite the code to the repository, this workflow will be triggered
 
 jobs:
   echo-hello:
