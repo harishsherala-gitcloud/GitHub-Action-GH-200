@@ -4,7 +4,7 @@ on: push # whenever to commite the code to the repository, this workflow will be
 
 jobs: #  Jobs are a set of steps that execute on the same runner. Each job runs in a fresh instance of the virtual environment.
   echo-hello:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # we selected the latest version of ubuntu as our runner. You can also select windows or macos as your runner.
     steps:
       - name: Say hello
         run: echo "Hello, harish you started the workflow!"
